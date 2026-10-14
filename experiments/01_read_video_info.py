@@ -49,7 +49,7 @@ while True:
             total = total + relative_luminance(r, g, b)
     brightness = total/(width*height)
     elapsed = time.perf_counter() - start
-    print(f"Took {elapsed:.2f} seconds to calculate brightness\n Total Brightness: {brightness:.2f}")
+    print(f"Took {(elapsed)*1000:.3f} ms to calculate brightness\n Total Brightness: {brightness:.6f}")
     break
                 
             
