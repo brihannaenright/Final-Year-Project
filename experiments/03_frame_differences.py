@@ -28,6 +28,9 @@ while True:
 
     lum = luminance_map(frame)
 
+    if 617 <= frame_number <= 629:
+        cv2.imwrite(f"data/frames/frame_{frame_number}.png", frame)
+
     if prev_lum is not None:
         change = lum - prev_lum
         abs_change = np.abs(change)     #The change of brightness, ignoring direction
